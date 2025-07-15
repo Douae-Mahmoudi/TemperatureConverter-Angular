@@ -1,0 +1,25 @@
+<div>
+  <h2>Temperature Converter</h2>
+
+  <div>
+    <label for="celsius">Celsius:</label>
+    <input
+      id="celsius"
+      type="number"
+      [value]="celsius === null ? '' : celsius"
+      (input)="onCelsiusChange($event)"
+      placeholder="Enter Celsius"
+    >
+  </div>
+
+  <div>
+    <label for="fahrenheit">Fahrenheit:</label>
+    <input
+      id="fahrenheit"
+      type="number"
+      [value]="fahrenheit === null ? '' : fahrenheit"
+      (input)="onFahrenheitChange($event)"
+      placeholder="Enter Fahrenheit"
+    >
+  </div>
+</div>
